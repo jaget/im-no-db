@@ -62,7 +62,3 @@ class Actor implements ModelInterface {
     }
 
 }
-
-$actor  = new Actor();
-echo $actor->validate();
-echo $actor->toJson();

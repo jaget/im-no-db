@@ -50,7 +50,3 @@ class Movie implements ModelInterface {
     }
 
 }
-
-$actor  = new Movie();
-echo $actor->validate();
-echo $actor->toJson();
