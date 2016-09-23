@@ -4,7 +4,7 @@ trait Modelable {
 
     public function __construct()
     {
-        $this->setData('id');
+        $this->setData('id');//likely data mapping would come from a database model. Including ID.
     }
 
     function toJson()
@@ -19,6 +19,7 @@ trait Modelable {
 
     function getData($field)
     {
+        //could instead use magic methods such as __get
         if(isset($this->data[$field])){
             return $this->data[$field];
         }else{
